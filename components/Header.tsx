@@ -1,6 +1,6 @@
 'use client';
-import Link from 'next/link';
-import { Navbar,Button,Text } from "@nextui-org/react";
+// import Link from 'next/link';
+import { Navbar,Text } from "@nextui-org/react";
 
 
 export default function Header() {
@@ -13,6 +13,9 @@ export default function Header() {
           </Text>
         </Navbar.Brand>
         <Navbar.Content enableCursorHighlight>
+        <Navbar.Link color="inherit" href="/">
+            Home
+          </Navbar.Link>
           <Navbar.Link color="inherit" href="/people">
             Character
           </Navbar.Link>
