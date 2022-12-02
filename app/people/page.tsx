@@ -8,7 +8,6 @@ export async function getData(){
 
 export default function Page(){
     let {results}= use(getData());
-    // console.log(results);
     const columns =[
     { Header: "Name", accessor: "name" },
     { Header: "Height", accessor: "height" },

@@ -27,7 +27,6 @@ function ReactTable({ columns, data }) {
     data,
     initialState: { pageIndex: 0,pageSize:3 },
   },useGlobalFilter,useSortBy,usePagination);
-  // console.log(page);
   const handleFilterInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.currentTarget;
     setGlobalFilter(value);
